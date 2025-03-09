@@ -29,21 +29,21 @@ const LiveClock = () => {
       <p className="text-7xl font-bold neon-glow">{formattedTime}</p>
       <div className="mt-4 space-x-4">
         <button 
-          className="px-4 py-2 bg-green-500 text-white rounded-lg disabled:opacity-50" 
+          className="px-4 py-2 bg-gray-700 text-white rounded-lg disabled:opacity-50" 
           onClick={startClock} 
           disabled={isRunning}
         >
           Start
         </button>
         <button 
-          className="px-4 py-2 bg-red-500 text-white rounded-lg disabled:opacity-50" 
+          className="px-4 py-2 bg-gray-500 text-white rounded-lg disabled:opacity-50" 
           onClick={stopClock} 
           disabled={!isRunning}
         >
           Stop
         </button>
         <button 
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg" 
+          className="px-4 py-2 bg-gray-600 text-white rounded-lg" 
           onClick={toggleFormat}
         >
           {is24HourFormat ? "12-hour" : "24-hour"}
